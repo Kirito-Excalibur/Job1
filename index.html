@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Site1</title>
+  </head>
+  <body class="w-full mx-auto">
+    <div id="navbar" class="p-5 top-0 fixed bg-white w-full z-20">
+      <div class="flex justify-between items-center">
+        <p class="font-bold text-2xl">+7 777 175 66 37</p>
+        <div id="menu" onclick="OnClickMenu()">
+          <div
+            id="bar1"
+            class="bar transition-all h-[5px] translate-y-[-4px] w-[35px] bg-black"
+          ></div>
+          <div
+            id="bar2"
+            class="bar transition-all h-[5px] w-[35px] bg-black"
+          ></div>
+          <div
+            id="bar3"
+            class="bar transition-all h-[5px] translate-y-[4px] w-[35px] bg-black"
+          ></div>
+        </div>
+      </div>
+
+      <ul
+        id="nav"
+        class="bg-white justify-center items-center transition ease-in hidden opacity-0 flex-col"
+      >
+        <li class="font-semibold text-center border-b-4 border-black">HOME</li>
+        <li class="font-medium text-center w-full">TREATMENT</li>
+        <li class="font-medium text-center w-full">TREATMENT METHODS</li>
+        <li class="font-medium text-center w-full">PRICES</li>
+        <li class="font-medium text-center w-full">STAGES OF TREATMENT</li>
+        <li class="font-medium text-center w-full">REVIEWS</li>
+        <li class="font-medium text-center w-full">CONTACTS</li>
+        <p class="mt-8 w-full text-center">+ 707 777 20 47</p>
+        <p class="w-full text-center">
+          Shykment, Ainakol street 66 <br />
+          (microdistrict Agroprom 66)
+        </p>
+        <img src="assets/whatsapp.png" class="w-[30px] mt-2" alt="" />
+      </ul>
+    </div>
+
+    <div class="mt-[4rem]">
+      <h1
+        class="absolute mt-[10rem] ml-[2rem] leading-[2.6rem] text-white font-bold text-[2.9rem]"
+      >
+        Anonymous <br />
+        Narcological <br />
+        Dispensary
+      </h1>
+      <h2 class="absolute mt-[20rem] ml-[2rem] text-white text-[18px]">
+        We will give you a free consultation within 15 minutes!
+      </h2>
+      <button
+        class="absolute mt-[25rem] font-bold text-white bg-green-400 p-5 px-8 rounded-[5rem]"
+      >
+        Ask for help
+      </button>
+      <div id="filter"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
