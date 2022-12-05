@@ -28,7 +28,31 @@
 #filter{
     background-image:url("/assets/image1.jpeg");
     background-color: rgba(44, 92, 165, 0.5);
+    background-repeat: no-repeat;
   background-blend-mode: multiply;
     height: 660px;
    
+}
+
+#shiny_btn{
+    
+    
+    animation: shine 3s infinite linear;
+}
+
+
+
+@keyframes shine {
+    0% {
+        background-color: #244619;
+        box-shadow: 0 0 3px #2ba805;
+      }
+      50% {
+        background-color: #3c2c0f;
+        box-shadow: 0 0 10px #49e819;
+      }
+      100% {
+        background-color: #ce1a1a;
+        box-shadow: 0 0 3px #2ba805;
+      }
 }

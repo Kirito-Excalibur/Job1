@@ -10,8 +10,8 @@
   <body class="w-full mx-auto">
     <div id="navbar" class="p-5 top-0 fixed bg-white w-full z-20">
       <div class="flex justify-between items-center">
-        <p class="font-bold text-2xl">+7 777 175 66 37</p>
-        <div id="menu" onclick="OnClickMenu()">
+        <p class="font-bold text-xl">+7 777 175 66 37</p>
+        <div id="menu" onclick="OnClickMenu()" class="hover:cursor-pointer">
           <div
             id="bar1"
             class="bar transition-all h-[5px] translate-y-[-4px] w-[35px] bg-black"
@@ -29,9 +29,11 @@
 
       <ul
         id="nav"
-        class="bg-white justify-center items-center transition ease-in hidden opacity-0 flex-col"
+        class="bg-white justify-center gap-[0.8rem] items-center transition ease-in hidden opacity-0 flex-col"
       >
-        <li class="font-semibold text-center border-b-4 border-black">HOME</li>
+        <li class="mt-[3rem] font-semibold text-center border-b-4 border-black">
+          HOME
+        </li>
         <li class="font-medium text-center w-full">TREATMENT</li>
         <li class="font-medium text-center w-full">TREATMENT METHODS</li>
         <li class="font-medium text-center w-full">PRICES</li>
@@ -47,9 +49,9 @@
       </ul>
     </div>
 
-    <div class="mt-[4rem]">
+    <div id="banner" class="mt-[4rem]">
       <h1
-        class="absolute mt-[10rem] ml-[2rem] leading-[2.6rem] text-white font-bold text-[2.9rem]"
+        class="absolute mt-[10rem] ml-[2rem] leading-[3rem] text-white font-bold text-[2.9rem]"
       >
         Anonymous <br />
         Narcological <br />
@@ -58,12 +60,25 @@
       <h2 class="absolute mt-[20rem] ml-[2rem] text-white text-[18px]">
         We will give you a free consultation within 15 minutes!
       </h2>
-      <button
-        class="absolute mt-[25rem] font-bold text-white bg-green-400 p-5 px-8 rounded-[5rem]"
+
+      <a
+        href=""
+        id="shiny_btn"
+        class="absolute mt-[25rem] ml-[2rem] font-bold text-white bg-green-400 p-5 px-8 rounded-[5rem]"
       >
         Ask for help
-      </button>
-      <div id="filter"></div>
+      </a>
+
+      <div id="filter" class="flex justify-center items-end">
+        <img src="assets/angle-down-solid.svg" class="w-[50px]" alt="" />
+      </div>
+    </div>
+
+    <div class="w-full mt-[5rem] flex items-center flex-col" id="content">
+      <h1 class="text-3xl font-bold">Narcological center Shymkent</h1>
+      <h2 class="text-2xl mt-[2rem] font-bold">
+        Narcological clinic NewLife Shymkent
+      </h2>
     </div>
   </body>
   <script src="script.js"></script>
